@@ -1,7 +1,16 @@
-<div>
+<nav>
+    <ul>
+        <li> Title</li>
+        <li> Listen </li>
+    </ul>
+</nav>
+
+<div class="tracks">
     {{#each items}}
-    <p> {{this.name}}</p>
-    <audio src={{this.preview_url}} controls>
-    </audio>
+    <div>
+        <h2> {{this.name}}</h2>
+        <audio src="{{this.preview_url}}" controls>
+        </audio>
+    </div>
     {{/each}}
 </div>

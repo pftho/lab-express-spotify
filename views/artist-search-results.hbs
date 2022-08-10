@@ -1,7 +1,11 @@
-<div class="artistCard">
+<div class="searchResult">
+
     {{#each items }}
-    <img src="{{this.images.0.url}}">
-    <h2> {{this.name}} </h2>
-    <a href="/albums/{{this.id}}">View Albums </a>
+    <div>
+        <img src="{{this.images.0.url}}">
+        <h2> {{this.name}} </h2>
+        <a href="/albums/{{this.id}}">View Albums </a>
+    </div>
     {{/each}}
+
 </div>

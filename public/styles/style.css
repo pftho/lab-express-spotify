@@ -1,0 +1,120 @@
+body {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*INDEX*/
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.main input {
+  width: 250px;
+  padding: 1rem;
+}
+
+.main button {
+  width: 200px;
+  background-color: plum;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+}
+
+/* ARTIST NAME SEARCH RESULTS & ALBUM DISPLAY*/
+
+.searchResult,
+.albumCard {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.searchResult div,
+.albumCard div {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.searchResult img,
+.albumCard img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.searchResult h2,
+.albumCard h2,
+.tracks h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.searchResult a,
+.albumCard a {
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px black solid;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 3rem;
+  color: black;
+}
+
+.searchResult a:hover,
+.albumCard a:hover {
+  background-color: pink;
+}
+
+/* TRACK PAGE*/
+
+nav {
+  background-color: pink;
+  width: 100vw;
+  height: 100px;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 8rem;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+
+.tracks {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.tracks div {
+  display: flex;
+  justify-content: space-between;
+}
